@@ -1,0 +1,9 @@
+client_name        = "client-a"
+environment        = "prod"
+aws_region        = "ap-south-1"
+vpc_id             = "vpc-09cc01ef2c8142dff"            
+public_subnet_id   = "subnet-0f53a0cea5d1409ed"         
+private_subnet_id  = "subnet-001bcc23990f7059b"        
+instance_type      = "t3.medium"
+ami_id             = "ami-0f918f7e67a3323f0"   # Linux/Windows AMI
+key_name         = "client-a-prod-key" 
