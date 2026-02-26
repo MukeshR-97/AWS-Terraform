@@ -1,9 +1,7 @@
-plan_name        = "client-a-backup-plan"
+plan_name        = "client-a-ec2-backup-plan"
 vault_name       = "client-a-backup-vault"
-resource_arn_list = [
-  "arn:aws:rds:us-east-1:123456789012:db:clientadb",
-  "arn:aws:ec2:us-east-1:123456789012:volume/vol-xxxxxxxx",
-  "arn:aws:s3:::client-a-bucket"
-]
-schedule         = "cron(0 5 ? * MON-FRI *)"   # daily Mon-Fri at 5 AM UTC
+
+ec2_instance_arn = "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123def456ghij"
+
+schedule         = "cron(0 18 * * ? *)"
 lifecycle_days   = 30
