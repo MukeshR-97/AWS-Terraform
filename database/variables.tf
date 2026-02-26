@@ -11,8 +11,7 @@ variable "private_subnet_ids" {
 }
 
 variable "allowed_sg_ids" {
-  description = "Security groups allowed to access RDS"
-  type        = list(string)
+  type = list(string)
 }
 
 variable "db_name" { type = string }
@@ -28,8 +27,7 @@ variable "password" {
 }
 
 variable "db_engine" {
-  description = "mysql | postgres | mariadb"
-  type        = string
+  type = string
 }
 
 variable "db_engine_version" {
