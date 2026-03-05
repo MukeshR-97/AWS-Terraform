@@ -64,7 +64,7 @@ resource "aws_instance" "public_ec2" {
 
   root_block_device {
     volume_size = 20
-    volume_type = "gp3"
+    volume_type = "gp2"
     encrypted   = true
   }
 
@@ -80,7 +80,7 @@ resource "aws_instance" "private_ec2" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
   subnet_id              = var.private_subnet_id
-  key_name               = aws_key_pair.this.key_name
+  key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.private_sg.id]
 
   root_block_device {

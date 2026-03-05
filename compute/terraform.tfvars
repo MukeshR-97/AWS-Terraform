@@ -1,9 +1,9 @@
 client_name        = "client-a"
 environment        = "prod"
 aws_region        = "ap-south-1"
-vpc_id             = "vpc-09cc01ef2c8142dff"            
-public_subnet_id   = "subnet-0f53a0cea5d1409ed"         
-private_subnet_id  = "subnet-001bcc23990f7059b"        
+vpc_id             = "vpc-026c80c2cb8ad7c25"            
+public_subnet_id   = "subnet-058534c8430f6c806"         
+private_subnet_id  = "subnet-08614b6d240daec93"        
 instance_type      = "t3.medium"
 ami_id             = "ami-0f918f7e67a3323f0"   # Linux/Windows AMI
 key_name         = "client-a-prod-key" 

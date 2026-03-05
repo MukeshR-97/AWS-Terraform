@@ -1,6 +1,6 @@
 aws_region   = "ap-south-1"
 client_name  = "client-a"
 environment  = "prod"
-instance_id  = "i-0d3ec35848ab5e5ab"
+instance_id  = "i-0d3ec3"
 alert_email  = "itcloudoperations@ilios.digital"
 disk_fstype  = "xfs"
